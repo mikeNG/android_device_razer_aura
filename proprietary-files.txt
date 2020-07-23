@@ -1067,6 +1067,9 @@ vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 vendor/lib/libtime_genoff.so
 
+# Touchscreen firmware
+vendor/firmware/RC2.img
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
@@ -1166,7 +1169,6 @@ vendor/bin/fqcaudioloopback_run.sh
 vendor/bin/fstman
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
 vendor/bin/hw/vendor.qti.gnss@2.0-service
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
@@ -1228,7 +1230,6 @@ vendor/firmware/cppf.b06
 vendor/firmware/cppf.b07
 vendor/firmware/cppf.mbn
 vendor/firmware/cppf.mdt
-vendor/firmware/RC2.img
 vendor/firmware/widevine.b00
 vendor/firmware/widevine.b01
 vendor/firmware/widevine.b02
@@ -1288,8 +1289,6 @@ vendor/lib64/libmdmimgload.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmm-omxcore.so
 vendor/lib64/liboemaids_vendor.so
@@ -1442,31 +1441,31 @@ vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 
 # vndk
-vendor/lib/vndk/libstagefright_foundation.so
-vendor/lib/vndk/libstagefright_omx.so
+#vendor/lib/vndk/libstagefright_foundation.so
+#vendor/lib/vndk/libstagefright_omx.so
 
 # overlay
--vendor/overlay/BluetoothResCommon.apk
--vendor/overlay/CarrierConfigResCommon.apk
--vendor/overlay/CellBroadcastReceiverResCommon.apk
--vendor/overlay/CtNetworkSettingRes/CtNetworkSettingRes.apk
--vendor/overlay/FrameworksResCommon.apk
--vendor/overlay/NovaLauncherOverlay.apk
--vendor/overlay/OptInAppOverlay/OptInAppOverlay.apk
--vendor/overlay/RazerAuraBluetoothRes.apk
--vendor/overlay/RazerAuraDMServiceRes.apk
--vendor/overlay/RazerAuraFrameworksRes.apk
--vendor/overlay/RazerAuraSettingsProviderRes.apk
--vendor/overlay/RazerAuraSettingsRes.apk
--vendor/overlay/RazerAuraSystemUIRes.apk
--vendor/overlay/RazerAuraTelephonyRes.apk
--vendor/overlay/RazerCommonFrameworksRes.apk
--vendor/overlay/RazerCommonSettingsIntelligenceRes.apk
--vendor/overlay/RazerCommonSettingsProviderRes.apk
--vendor/overlay/RazerCommonSettingsRes.apk
--vendor/overlay/RazerCommonSystemUIRes.apk
--vendor/overlay/RazerCommonTelecommRes.apk
--vendor/overlay/RazerCommonTelephonyRes.apk
--vendor/overlay/SystemUIResCommon.apk
--vendor/overlay/TelecommResCommon.apk
--vendor/overlay/TelephonyResCommon.apk
+#-vendor/overlay/BluetoothResCommon.apk
+#-vendor/overlay/CarrierConfigResCommon.apk
+#-vendor/overlay/CellBroadcastReceiverResCommon.apk
+#-vendor/overlay/CtNetworkSettingRes/CtNetworkSettingRes.apk
+#-vendor/overlay/FrameworksResCommon.apk
+#-vendor/overlay/NovaLauncherOverlay.apk
+#-vendor/overlay/OptInAppOverlay/OptInAppOverlay.apk
+#-vendor/overlay/RazerAuraBluetoothRes.apk
+#-vendor/overlay/RazerAuraDMServiceRes.apk
+#-vendor/overlay/RazerAuraFrameworksRes.apk
+#-vendor/overlay/RazerAuraSettingsProviderRes.apk
+#-vendor/overlay/RazerAuraSettingsRes.apk
+#-vendor/overlay/RazerAuraSystemUIRes.apk
+#-vendor/overlay/RazerAuraTelephonyRes.apk
+#-vendor/overlay/RazerCommonFrameworksRes.apk
+#-vendor/overlay/RazerCommonSettingsIntelligenceRes.apk
+#-vendor/overlay/RazerCommonSettingsProviderRes.apk
+#-vendor/overlay/RazerCommonSettingsRes.apk
+#-vendor/overlay/RazerCommonSystemUIRes.apk
+#-vendor/overlay/RazerCommonTelecommRes.apk
+#-vendor/overlay/RazerCommonTelephonyRes.apk
+#-vendor/overlay/SystemUIResCommon.apk
+#-vendor/overlay/TelecommResCommon.apk
+#-vendor/overlay/TelephonyResCommon.apk
