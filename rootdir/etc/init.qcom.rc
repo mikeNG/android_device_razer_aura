@@ -646,14 +646,6 @@ service vendor.netmgrd /system/vendor/bin/netmgrd
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
-    class main
-    user radio
-    socket ipacm_log_file dgram 660 radio radio
-    group radio diag oem_2901
-    disabled
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.ipacm /system/vendor/bin/ipacm
     class main
     user radio
@@ -741,27 +733,6 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     oneshot
     #writepid /dev/cpuset/system-background/tasks
 
-# FST Manager with hostapd (softap) - all settings inside ini file
-service fstman /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini -a 1
-    user wifi
-    group wifi
-    capabilities NET_ADMIN NET_RAW
-    class main
-    disabled
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
-
-# FST Manager with supplicant - connect to supplicant socket
-service fstman_wlan0 /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini \
-    -a 0 @android:vendor_wpa_wlan0
-    user wifi
-    group wifi
-    capabilities NET_ADMIN NET_RAW
-    class main
-    disabled
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
-
 service wigighalsvc /vendor/bin/wigighalsvc
     interface vendor.qti.hardware.wigig.supptunnel@1.0::ISuppTunnelProvider default
     class hal
@@ -829,21 +800,6 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
     #writepid /dev/cpuset/system-background/tasks
-
-service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
-    class main
-    user wifi
-    group wifi system inet net_admin
-    capabilities NET_ADMIN
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
-
-service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
-    user root
-    group root
-    disabled
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
 
 service wifi_ftmd /system/vendor/bin/wifi_ftmd
     user system

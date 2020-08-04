@@ -1,2 +1,0 @@
-on post-fs-data
-    mkdir /data/theme 0771 theme theme
