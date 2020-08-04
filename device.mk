@@ -190,10 +190,7 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.qti.ims.sh \
     init.qti.qseecomd.sh \
-    init.razer.chargelimit.rc \
     init.razer.common.rc \
-    init.razer.theme.rc \
-    init.rc2.audio.rc \
     init.rc2.fingerprint.rc \
     init.rc2.ramdump.rc \
     init.rc2.sensor.rc \
