@@ -79,11 +79,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
 
-# GNSS
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.flp=brcm \
-    ro.hardware.gps=brcm
-
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
@@ -96,8 +91,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.video=true \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+    audio.offload.video=true
 
 # Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
