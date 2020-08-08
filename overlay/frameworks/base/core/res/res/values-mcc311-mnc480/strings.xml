@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_mms_user_agent">odrazerv1</string>
+    <string name="config_mms_user_agent_profile_url">http://uaprof.vtext.com/razer/odrazerv1/odrazerv1.xml</string>
+</resources>

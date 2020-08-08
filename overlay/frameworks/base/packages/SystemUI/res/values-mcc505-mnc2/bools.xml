@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_show4GForLTE">true</bool>
+    <bool name="enable_volte_icon">true</bool>
+    <bool name="enable_vowifi_icon">true</bool>
+</resources>
