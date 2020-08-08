@@ -82,14 +82,16 @@
     <hal format="hidl">
         <name>android.hardware.drm</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>ICryptoFactory</name>
-            <instance>default</instance>
+            <instance>clearkey</instance>
+            <instance>widevine</instance>
         </interface>
         <interface>
             <name>IDrmFactory</name>
-            <instance>default</instance>
+            <instance>clearkey</instance>
+            <instance>widevine</instance>
         </interface>
         <fqname>@1.0::ICryptoFactory/default</fqname>
         <fqname>@1.0::IDrmFactory/default</fqname>
@@ -115,7 +117,6 @@
         <interface>
             <name>IGnss</name>
             <instance>default</instance>
-            <instance>gnss_vendor</instance>
         </interface>
         <fqname>@1.0::IGnss/default</fqname>
         <fqname>@1.0::IGnss/gnss_vendor</fqname>
@@ -228,12 +229,12 @@
     <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IPower/default</fqname>
+        <fqname>@1.0::IPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -476,14 +477,14 @@
         <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.trust</name>
+        <name>vendor.dolby.hardware.dms</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IUsbRestrict</name>
+            <name>IDms</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IUsbRestrict/default</fqname>
+        <fqname>@1.0::IDms/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.nxp.hardware.nfc</name>
@@ -566,6 +567,26 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ILinkLatency/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.factory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.fm</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFmHci</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IFmHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.improvetouch.touchcompanion</name>
@@ -735,6 +756,16 @@
         <fqname>@1.0::ISensorsCalibrate/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.soter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISoter/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -813,6 +844,16 @@
             <instance>imsrtpservice</instance>
         </interface>
         <fqname>@1.0::IRTPService/imsrtpservice</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.razer.power</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IRazerPower</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IRazerPower/default</fqname>
     </hal>
     <sepolicy>
         <version>28.0</version>
