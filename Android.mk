@@ -63,8 +63,7 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MSM MPSS folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
-	@mkdir -p $(dir $@)/fih_rfs/data/misc/fih_atl
-	@mkdir -p $(dir $@)/fih_rfs/data/misc/fih_mcfg
+	@mkdir -p $(dir $@)/fih_rfs/data/misc
 	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/mpss $@/readwrite
 	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
 	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
