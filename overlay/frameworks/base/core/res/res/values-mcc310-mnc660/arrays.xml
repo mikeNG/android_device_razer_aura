@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_gpsParameters">
+        <item>SUPL_HOST=supl.google.com</item>
+        <item>SUPL_PORT=7275</item>
+        <item>SUPL_VER=0x20000</item>
+        <item>SUPL_MODE=1</item>
+        <item>SUPL_ES=1</item>
+        <item>LPP_PROFILE=3</item>
+        <item>USE_EMERGENCY_PDN_FOR_EMERGENCY_SUPL=1</item>
+        <item>A_GLONASS_POS_PROTOCOL_SELECT=0</item>
+        <item>GPS_LOCK=0</item>
+    </string-array>
+    <integer-array name="config_lteDbmThresholds">
+        <item>-126</item>
+        <item>-125</item>
+        <item>-111</item>
+        <item>-105</item>
+        <item>-94</item>
+        <item>-44</item>
+    </integer-array>
+    <integer-array name="config_umtsDbmThresholds">
+        <item>-115</item>
+        <item>-115</item>
+        <item>-105</item>
+        <item>-95</item>
+        <item>-85</item>
+        <item>-44</item>
+    </integer-array>
+</resources>
