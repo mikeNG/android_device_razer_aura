@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=560
+    ro.sf.lcd_density=480
 
 # Display post-processing
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -81,8 +81,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.qti.sys.fw.bg_apps_limit=38 \
-    vendor.iop.enable_uxe=1
+    ro.vendor.qti.sys.fw.bg_apps_limit=38
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -99,7 +98,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp_offload_cap=sbc-aac \
     persist.vendor.qcomsysd.enabled=1 \
     persist.vendor.qti.games.gt.prof=1 \
+    qemu.hw.mainkeys=0 \
     ro.build.shutdown_timeout=6 \
+    ro.com.android.dataroaming=true \
+    ro.com.google.clientidbase=android-razer \
     ro.com.google.gmsversion=9_201907 \
     ro.com.widevine.cachesize=16777216 \
     ro.cp_system_other_odex=1 \
@@ -107,7 +109,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
     ro.vendor.at_library=libqti-at.so \
     ro.vendor.bt.bdaddr_path=/sys/module/fih_mfd/parameters/bt_mac \
+    ro.vendor.razer.theme.version=1 \
     ro.wifi.power.reduction=1 \
+    setupwizard.feature.predeferred_enabled=false \
     vendor.display.disable_fbid_cache=1 \
     vendor.gatekeeper.disable_spu=true
 
