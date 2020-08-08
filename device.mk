@@ -263,8 +263,8 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.aura
+#PRODUCT_PACKAGES += \
+#    android.hardware.light@2.0-service.aura
 
 # Media
 PRODUCT_PACKAGES += \
@@ -318,8 +318,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service-qti
+#PRODUCT_PACKAGES += \
+#    android.hardware.power@1.1-service-qti
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -375,8 +375,8 @@ PRODUCT_PACKAGES += \
     thermal.sdm845
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
