@@ -68,7 +68,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.hw=0 \
     persist.demo.hdmirotationlock=false \
-    ro.opengles.version=196610
+    ro.opengles.version=196610 \
+    vendor.display.res_switch_en=0
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
