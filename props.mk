@@ -69,7 +69,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=0 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    vendor.display.res_switch_en=0
+    vendor.display.res_switch_en=0 \
+    debug.hwui.renderer=skiavk
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
